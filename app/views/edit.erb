@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<form method='POST' action='/posts/<%=@post.id%>'>
+		 	<input id ="hidden" type="hidden" value="patch" name="_method">
+			<label>Title</label>
+			<br>
+			<input type="text" name="name" value="<%=@post.name%>">
+			<br>
+			<label>Content</label>
+			<br>
+			<textarea rows="8" cols="80" name="content"><%=@post.content%></textarea>
+			<br>
+			<input type="submit" name="Edit" id="submit">
+		</form>
+	</body>
+</html>
